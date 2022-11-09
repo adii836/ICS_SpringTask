@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            
+            }
+            .fName{
+                background-color: rgb(195, 246, 191);
+            }
+            </style>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <table style="width:100%">
+        <tr>
+          <th  colspan="3">XYZ Online  Delivery</th>
+        </tr>
+        <tr>
+            <th  colspan="3">Personal Details</th>
+        </tr>
+        <tr>
+          <td><label>First Name</label></td>
+          <td colspan="2"><input type="text" class="fName" maxlength="20" required style="width: 50%;"></td> 
+        </tr>
+        <tr>
+            <td><label>Phone Number</label></td>
+            <td colspan="2"><input required type="text" style="width: 50%;"></td> 
+        </tr>
+
+        <tr>
+            <th  colspan="3">Order Prefernces</th>
+          </tr>
+
+          <tr>
+            <td><label>Size</label></td>
+            <td colspan="2">
+                <input type="radio" required id="small" name="size" value="30">
+                <label for="small">Small</label>
+                <input type="radio" required id="medium" name="size" value="60">
+                <label for="medium">Medium</label> 
+                <input type="radio" required id="large" name="size" value="100">
+                <label for="large">Large</label>
+            </td> 
+          </tr>
+
+          <tr>
+            <td><label>Base</label></td>
+            <td colspan="2">
+                <select required name="Base" id="Base">
+                <option value="Pan Pizza">Pan Pizza</option>
+                <option value="Cheese Crust">Cheese Crust</option>
+                <option value="Chicken Stuffed Crust">Chicken Stuffed Crust</option>
+                
+              </select></td> 
+        </tr>
+
+
+        <tr>
+            <td><label>Toppings</label></td>
+            <td colspan="2">
+                <input type="checkbox" id="Cheese" name="Toppings" value="30">
+                <label for="Cheese">Cheese</label>
+                <input type="checkbox" id="Olives" name="Toppings" value="60">
+                <label for="Olives">Olives</label> 
+                <input type="checkbox" id="Tomatoes" name="Toppings" value="100">
+                <label for="Tomatoes">Tomatoes</label>
+                <input type="checkbox" id="Capsicum" name="Toppings" value="30">
+                <label for="Capsicum">Capsicum</label>
+                <input type="checkbox" id="Jalapenos" name="Toppings" value="60">
+                <label for="Jalapenos">Jalapenos</label> 
+                <input type="checkbox" id="Mushrooms" name="Toppings" value="100">
+                <label for="Mushrooms">Mushrooms</label>
+                <input type="checkbox" id="Pepperoni" name="Toppings" value="30">
+                <label for="Pepperoni">Pepperoni</label>
+                <input type="checkbox" id="Onion" name="Toppings" value="60">
+                <label for="Onion">Onion</label> 
+                
+            </td> 
+          
+            <tr>
+                <td><label>Additional Details</label></td>
+                <td colspan="2"><textarea required rows="2" cols="30" name="comment" style="width: 80%;"></textarea></td> 
+            </tr>
+            <tr>
+                <th colspan="3">Conform details and proceed to pay? 
+                    <input type="radio" id="pan" name="Conf" value="30">
+                    <label for="Yes">Yes</label>
+                    <input type="radio" id="pay" name="Conf" value="60">
+                    <label for="No">No</label> 
+                </th>
+            </tr>
+
+            <tr>
+                <th colspan="3">
+                    <input type ="submit">
+                </th>
+            </tr>
+
+      </table>
+      </form>
+</body>
+</html>
